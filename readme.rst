@@ -111,6 +111,18 @@ Install
    unzip vosk-model-small-en-us-0.15.zip
    mv vosk-model-small-en-us-0.15 model
 
+   extract steps i did to run it in my system:
+   sudo apt-get install libx11-dev libxtst-dev libxinerama-dev libxkbcommon-dev libxi-dev
+   git clone https://github.com/jordansissel/xdotool.git
+   cd xdotool
+   make
+   # Create a local bin directory if it doesn't exist
+   mkdir -p ~/.config/nerd-dictation/bin
+   
+   # Move the compiled binary into it
+   mv ./xdotool ~/.config/nerd-dictation/bin/
+   
+
 To test dictation:
 
 .. code-block:: sh
